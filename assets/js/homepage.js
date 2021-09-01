@@ -7,14 +7,22 @@ var getCityWeather = function() {
 console.log("outside");
 }
 // these are variables for the form elements
-var userFormEl = document.querySelector("#city-form");
-var nameInputEl = document.querySelector("#cityname");
+var cityFormEl = document.querySelector("#city-form");
+var cityNameInputEl = document.querySelector("#cityname");
 
 // create event listener for the city search
 // executes on form submission browser event
 var formSubmitHandler = function(event) {
     event.preventDefault();
-    console.log(event);
+//   get value from input element
+var cityname = cityNameInputEl.nodeValue.trim();
+
+if(cityname) {
+    getCityWeather(cityname);
+    cityNameInputEl.value = "";
+} else{
+    alert("Please enter a City Name");
+}
 };
 
 userFormEl.addEventListener("submit", formSubmitHandler);
