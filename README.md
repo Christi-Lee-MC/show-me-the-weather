@@ -24,6 +24,9 @@ Sample of web application's appearance and the desired functionality
 ![image](https://user-images.githubusercontent.com/79948400/131715365-a3e85b86-b83d-46fb-bcbc-024e50721fb9.png)
 
 ## Links
-GitHub Repo:  https://github.com/Christi-Lee-MC/show-me-the-weather/issues/new
-Live Link:  https://christi-lee-mc.github.io/show-me-the-weather/
+GitHub Repo:  
+https://github.com/Christi-Lee-MC/show-me-the-weather/issues/new
+
+Live Link:  
+https://christi-lee-mc.github.io/show-me-the-weather/
 
