@@ -1,8 +1,14 @@
-// create api connections here
-var getCityWeather = function() {
-    fetch("https://api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={cityweather}").then.response.json().then(function(data) {
-        displayCityWeather(current.dt, city);
-      });
+// create api connections here 
+var getCityWeather = function(cityname) {
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+cityname+"&appid=af0f0e9374c73e2c02f46aba2b7be010").then(function(response)
+    {
+        return response.json()
+    }).then(function(data) {
+       displayCityWeather(data);
+    }
+      
+      );
+      
 };
 
 // these are variables for the form elements
@@ -22,17 +28,18 @@ if(cityname) {
 } else{
     alert("Please enter a City Name");
 }
+};
 
 // create function to display city weather
-var displayCityWeather = function(weather, searchTerm) {
+var displayCityWeather = function(weather) {
     console.log(weather);
-    console.log(searchTerm);
+    
 
-}
+};
 
 var cityWeatherContainerEl = document.querySelector("#weather-container");
 var citySearchTerm = document.querySelector("#city-search-term");
 
-};
+
 
 cityFormEl.addEventListener("submit", formSubmitHandler);
